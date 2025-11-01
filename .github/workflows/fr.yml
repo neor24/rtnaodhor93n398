@@ -103,10 +103,9 @@ jobs:
 
       - name: Run Script and Generate M3U8 for M6
         run: |
-         python_output=$(python py/videom6.py)
-         echo "#EXTM3U" > fr/videom6.m3u8
-         echo "#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=5340000,BANDWIDTH=6680000,RESOLUTION=1280x720,FRAME-RATE=50.000,CODECS="avc1.640020,mp4a.40.2",CLOSED-CAPTIONS=NONE" >> fr/videom6.m3u8
-         echo "$python_output" >> fr/videom6.m3u8
+          curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" https://callofliberty.fr/tv/6-M6/6-M6.php | grep -oP "source:\s*'\K[^']+(?=',)")
+          curl_output2=$(curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" $curl_output)
+          echo "$curl_output2" > fr/videom6.m3u8  # Use single > to overwrite existing content
 
       - name: Pull changes from remote
         run: git pull origin main          
