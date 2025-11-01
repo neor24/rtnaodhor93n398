@@ -18,11 +18,11 @@ jobs:
       - name: Create Required Folders
         run: mkdir -p fr txt ar py
 
-      - name: Run Script and Generate M3U8 for VideoTiji
+      - name: Run Script and Generate M3U8 for VideoAB1
         run: |
-          curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/6-M6/6-M6.php" | grep -oP "source:\s*'\K[^']+(?=',)")
+          curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/101-AB1/101-AB1.php" | grep -oP "source:\s*'\K[^']+(?=',)")
           if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videotiji.m3u8
+            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videoab1.m3u8
           else
             echo "Erreur: URL source non trouvée pour TF1"
           fi
