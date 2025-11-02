@@ -1,10 +1,19 @@
 #EXTM3U
-#EXT-X-VERSION:8
-#EXT-X-STREAM-INF:BANDWIDTH=961073,AVERAGE-BANDWIDTH=873703,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=768x432,FRAME-RATE=25.000
-https://cache1b.netplus.ch:443/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYyMDgyNjgwIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9tNmhkL2Jyb3dzZXItSExTOC8iLCJzZXNzaW9uX2Nkbl9pZCI6Ijk3NTViNzM4YjJlNDA4YzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzEwLjAuMjI5LjIzIiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiIzOCIsInNvdXJjZXMiOlszOF19.vPwoS_VLd9ceP1w_qNXIdoB9NnzfkdG-LqPJ7GyrfaJ6tcUW05pglGgktlkJSECJIQBPE8hryZXXbv1NJjM3zA==/live/eds/m6hd/browser-HLS8/m6hd-avc1_700000=10006-mp4a_130400_fra=20002.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1660673,AVERAGE-BANDWIDTH=1509703,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=768x432,FRAME-RATE=25.000
-https://cache1b.netplus.ch:443/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYyMDgyNjgwIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9tNmhkL2Jyb3dzZXItSExTOC8iLCJzZXNzaW9uX2Nkbl9pZCI6Ijk3NTViNzM4YjJlNDA4YzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzEwLjAuMjI5LjIzIiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiIzOCIsInNvdXJjZXMiOlszOF19.vPwoS_VLd9ceP1w_qNXIdoB9NnzfkdG-LqPJ7GyrfaJ6tcUW05pglGgktlkJSECJIQBPE8hryZXXbv1NJjM3zA==/live/eds/m6hd/browser-HLS8/m6hd-avc1_1300000=10002-mp4a_130400_fra=20002.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=2476873,AVERAGE-BANDWIDTH=2251704,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,FRAME-RATE=25.000
-https://cache1b.netplus.ch:443/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYyMDgyNjgwIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9tNmhkL2Jyb3dzZXItSExTOC8iLCJzZXNzaW9uX2Nkbl9pZCI6Ijk3NTViNzM4YjJlNDA4YzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzEwLjAuMjI5LjIzIiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiIzOCIsInNvdXJjZXMiOlszOF19.vPwoS_VLd9ceP1w_qNXIdoB9NnzfkdG-LqPJ7GyrfaJ6tcUW05pglGgktlkJSECJIQBPE8hryZXXbv1NJjM3zA==/live/eds/m6hd/browser-HLS8/m6hd-avc1_2000000=10000-mp4a_130400_fra=20002.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=5974873,AVERAGE-BANDWIDTH=5431703,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,FRAME-RATE=50.000
-https://cache1b.netplus.ch:443/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzYyMDgyNjgwIiwic2lwIjoiIiwicGF0aCI6Ii9saXZlL2Vkcy9tNmhkL2Jyb3dzZXItSExTOC8iLCJzZXNzaW9uX2Nkbl9pZCI6Ijk3NTViNzM4YjJlNDA4YzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzEwLjAuMjI5LjIzIiwic2Vzc2lvbl90aW1lb3V0IjowLCJhdWQiOiIzOCIsInNvdXJjZXMiOlszOF19.vPwoS_VLd9ceP1w_qNXIdoB9NnzfkdG-LqPJ7GyrfaJ6tcUW05pglGgktlkJSECJIQBPE8hryZXXbv1NJjM3zA==/live/eds/m6hd/browser-HLS8/m6hd-avc1_5000000=10004-mp4a_130400_fra=20002.m3u8
+#EXT-X-VERSION:6
+## Created with Unified Streaming Platform  (version=1.15.5-31515)
+#EXT-X-SESSION-KEY:METHOD=SAMPLE-AES,URI="skd://drmtoday?keyId=64a25fbe10f3fcc8d105fe967d637429",KEYFORMAT="com.apple.streamingkeydelivery",KEYFORMATVERSIONS="1"
+
+# AUDIO groups
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio-aacl-128",LANGUAGE="fr",NAME="French",DEFAULT=YES,AUTOSELECT=YES,CHANNELS="2",URI="https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-audio_fra=128000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6"
+
+# variants
+#EXT-X-STREAM-INF:BANDWIDTH=493000,AVERAGE-BANDWIDTH=448000,CODECS="mp4a.40.2,avc1.640015",RESOLUTION=480x270,FRAME-RATE=25,AUDIO="audio-aacl-128"
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-video=300000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6
+#EXT-X-STREAM-INF:BANDWIDTH=1076000,AVERAGE-BANDWIDTH=978000,CODECS="mp4a.40.2,avc1.64001E",RESOLUTION=768x432,FRAME-RATE=25,AUDIO="audio-aacl-128"
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-video=800000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6
+#EXT-X-STREAM-INF:BANDWIDTH=1659000,AVERAGE-BANDWIDTH=1508000,CODECS="mp4a.40.2,avc1.64001F",RESOLUTION=960x540,FRAME-RATE=25,AUDIO="audio-aacl-128"
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-video=1300000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6
+#EXT-X-STREAM-INF:BANDWIDTH=2941000,AVERAGE-BANDWIDTH=2674000,CODECS="mp4a.40.2,avc1.64001F",RESOLUTION=1280x720,FRAME-RATE=25,AUDIO="audio-aacl-128"
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-video=2400000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6
+#EXT-X-STREAM-INF:BANDWIDTH=6439000,AVERAGE-BANDWIDTH=5854000,CODECS="mp4a.40.2,avc1.640028",RESOLUTION=1920x1080,FRAME-RATE=25,AUDIO="audio-aacl-128"
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://live-up.akamaized.net/public/tiji/tiji.isml/tiji-video=5400000.m3u8?signature=20251104050000_242bf78d6ffa190667e282e6ea3a3d2a3d569bd6
