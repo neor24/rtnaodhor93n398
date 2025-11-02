@@ -15,30 +15,67 @@ jobs:
         with:
           ref: main
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
       - name: Create Required Folders
         run: mkdir -p fr txt ar py
 
-      - name: Generate M3U8 for VideoTiji
+      - name: Generate M3U8 for VideoTiji (Python)
         run: |
-          set +e
-          html_content=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/57-TiJi/57-TiJi.php")
-          m3u8_url=$(echo "$html_content" | grep -oP '"file":\s*"\K[^"]+\.m3u8[^"]*' | head -1)
-          set -e
+          cat > extract_tiji.py << 'EOF'
+          import requests
+          import re
+          import os
           
-          if [ -n "$m3u8_url" ]; then
-            echo "✅ URL M3U8 trouvée pour TiJi"
-            curl -k -s -e "https://callofliberty.fr/" \
-                 -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" \
-                 -H "Origin: https://callofliberty.fr" \
-                 -H "Referer: https://callofliberty.fr/tv/57-TiJi/57-TiJi.php" \
-                 "$m3u8_url" > fr/videotiji.m3u8
-            echo "✅ Fichier M3U8 TiJi généré"
-          else
-            echo "❌ URL M3U8 non trouvée pour TiJi"
-            echo "#EXTM3U" > fr/videotiji.m3u8
-          fi
+          os.makedirs('fr', exist_ok=True)
+          session = requests.Session()
+          session.verify = False
+          session.headers.update({
+              'User-Agent': 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36'
+          })
+          
+          try:
+              response = session.get('https://callofliberty.fr/tv/57-TiJi/57-TiJi.php')
+              content = response.text
+              
+              patterns = [
+                  r"source:\s*'([^']+)'",
+                  r'"file":\s*"([^"]+)"',
+                  r'https://s2\.callofliberty\.fr/streams/TiJi/[^"\']+'
+              ]
+              
+              m3u8_url = None
+              for pattern in patterns:
+                  match = re.search(pattern, content)
+                  if match:
+                      m3u8_url = match.group(1) if len(match.groups()) > 0 else match.group(0)
+                      break
+              
+              if m3u8_url:
+                  headers = {
+                      'Referer': 'https://callofliberty.fr/tv/57-TiJi/57-TiJi.php',
+                      'Origin': 'https://callofliberty.fr'
+                  }
+                  m3u8_response = session.get(m3u8_url, headers=headers)
+                  
+                  with open('fr/videotiji.m3u8', 'w') as f:
+                      f.write(m3u8_response.text)
+                  print("✅ Fichier M3U8 TiJi généré")
+              else:
+                  print("❌ URL M3U8 non trouvée pour TiJi")
+                  with open('fr/videotiji.m3u8', 'w') as f:
+                      f.write('#EXTM3U')
+          except Exception as e:
+              print(f"Erreur: {e}")
+              with open('fr/videotiji.m3u8', 'w') as f:
+                  f.write('#EXTM3U')
+          EOF
+          
+          python extract_tiji.py
 
-      # Les autres chaînes restent inchangées...
       - name: Run Script and Generate M3U8 for VideoTF1
         run: |
           set +e
@@ -51,7 +88,7 @@ jobs:
             echo "Erreur: URL source non trouvée pour TF1"
           fi
 
-      # ... autres chaînes
+      # ... autres chaînes (TF1FS, TMC, TFX, etc.)
 
       - name: Commit and Push Changes
         env:
