@@ -1,37 +1,27 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",11/05/25 07:00:00 PM EST = Utah Jazz @ Detroit Pistons
+#EXTINF:-1 group-title="NHL",11/06/25 07:00:00 PM EST = Ottawa Senators @ Boston Bruins
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 07:00:00 PM EST = Brooklyn Nets @ Indiana Pacers
+#EXTINF:-1 group-title="NHL",11/06/25 07:00:00 PM EST = St Louis Blues @ Buffalo Sabres
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 07:10:00 PM EST = Philadelphia 76ers @ Cleveland Cavaliers
+#EXTINF:-1 group-title="NHL",11/06/25 07:00:00 PM EST = Minnesota Wild @ Carolina Hurricanes
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 07:30:00 PM EST = Minnesota Timberwolves @ New York Knicks
+#EXTINF:-1 group-title="NHL",11/06/25 07:00:00 PM EST = Montréal Canadiens @ New Jersey Devils
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 07:30:00 PM EST = Washington Wizards @ Boston Celtics
+#EXTINF:-1 group-title="NHL",11/06/25 07:30:00 PM EST = Washington Capitals @ Pittsburgh Penguins
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 08:00:00 PM EST = Houston Rockets @ Memphis Grizzlies
+#EXTINF:-1 group-title="NHL",11/06/25 08:00:00 PM EST = Anaheim Ducks @ Dallas Stars
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 08:40:00 PM EST = New Orleans Pelicans @ Dallas Mavericks
+#EXTINF:-1 group-title="NHL",11/06/25 08:00:00 PM EST = Philadelphia Flyers @ Nashville Predators
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 09:00:00 PM EST = Miami Heat @ Denver Nuggets
+#EXTINF:-1 group-title="NHL",11/06/25 10:00:00 PM EST = Florida Panthers @ Los Angeles Kings
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 10:00:00 PM EST = Golden State Warriors @ Sacramento Kings
+#EXTINF:-1 group-title="NHL",11/06/25 10:00:00 PM EST = Tampa Bay Lightning @ Vegas Golden Knights
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 10:00:00 PM EST = San Antonio Spurs @ Los Angeles Lakers
+#EXTINF:-1 group-title="NCAAF",11/06/25 07:30:00 PM EST = Georgia Southern Eagles @ Appalachian State Mountaineers
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/05/25 10:10:00 PM EST = Oklahoma City Thunder @ Portland Trail Blazers
+#EXTINF:-1 group-title="NCAAF",11/06/25 07:30:00 PM EST = UTSA Roadrunners @ South Florida Bulls
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NCAAF",11/05/25 07:00:00 PM EST = Northern Illinois Huskies @ Toledo Rockets
+#EXTINF:-1 group-title="NFL",11/06/25 08:15:00 PM EST = Las Vegas Raiders @ Denver Broncos
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NCAAF",11/05/25 07:00:00 PM EST = Kent State Golden Flashes @ Ball State Cardinals
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/05/25 07:00:00 PM EST = Utah Mammoth @ Toronto Maple Leafs
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/05/25 07:30:00 PM EST = St Louis Blues @ Washington Capitals
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/05/25 09:30:00 PM EST = Columbus Blue Jackets @ Calgary Flames
-https://e3.thetvapp.to/hls/NHL20/tracks-v1a1/mono.m3u8?token=32oU0UT2hTwynkFNhhlHEQ&expires=1762443785&user_id=UURJMGQ1UE9sMTdOaEgxaGNHcTkxRGdocm96cjF6QmJyWXEzOG1kYg==
-#EXTINF:-1 group-title="NHL",11/05/25 10:00:00 PM EST = Chicago Blackhawks @ Vancouver Canucks
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/05/25 10:00:00 PM EST = San Jose Sharks @ Seattle Kraken
+#EXTINF:-1 group-title="NBA",11/06/25 09:00:00 PM EST = Los Angeles Clippers @ Phoenix Suns
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
