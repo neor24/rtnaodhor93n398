@@ -18,25 +18,6 @@ jobs:
       - name: Create Required Folders
         run: mkdir -p fr txt ar py
 
-- name: Run Script and Generate M3U8 for VideoFrance3
-  run: |
-    mkdir -p fr
-    
-    curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/232-france.3hautenormandie/232-france.3hautenormandie.php" | grep -oP "source:\s*'\K[^']+(?=',)")
-    
-    if [ -n "$curl_output" ]; then
-      echo "URL source: $curl_output"
-      curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" | \
-        sed -E 's|https?://[^/]*/(proxy|cdn-cgi|redirect|stream|pass)/[^/]*/https?://|https://|g' | \
-        sed 's|/proxy?url=||g' | \
-        sed 's|%3A|:|g' | sed 's|%2F|/|g' > fr/videofr3.m3u8
-      
-      echo "Fichier M3U8 généré et nettoyé"
-    else
-      echo "Erreur: URL source non trouvée pour France3"
-      exit 1
-    fi
-
       - name: Run Script and Generate M3U8 for VideoRTS1
         run: |
           curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/301-RTS1/301-RTS1.php" | grep -oP "source:\s*'\K[^']+(?=',)")
