@@ -1,129 +1,55 @@
 #EXTM3U
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = James Madison Dukes @ Marshall Thundering Herd
-https://v2.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=bP-0FWAms3koL5vWSra7og&expires=1762702403&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = Indiana Hoosiers @ Penn State Nittany Lions
-https://v3.thetvapp.to/hls/WNYWDT1/tracks-v1a1/mono.m3u8?token=M8Vuc6dFdCh4o_RmVWXxDQ&expires=1762702414&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = Georgia Bulldogs @ Mississippi State Bulldogs
-https://v13.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=oialU0nHIJ0Ig2o5AEGvag&expires=1762702424&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = Colorado Buffaloes @ West Virginia Mountaineers
-https://e5.thetvapp.to/hls/TNTEast/tracks-v1a1/mono.m3u8?token=4au3-OSZpR1j97xe2U49vA&expires=1762702434&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = SMU Mustangs @ Boston College Eagles
-https://v18.thetvapp.to/hls/ACCNetwork/tracks-v1a1/mono.m3u8?token=czDWBs3sEB6rih9jXCJPSw&expires=1762702444&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = Southern Mississippi Golden Eagles @ Arkansas State Red Wolves
-https://v13.thetvapp.to/hls/ESPNU/tracks-v1a1/mono.m3u8?token=vzl2g1wh_x7vm0GAhLYcdQ&expires=1762702455&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = BYU Cougars @ Texas Tech Red Raiders
-https://v17.thetvapp.to/hls/WABCDT1/tracks-v1a1/mono.m3u8?token=hhjNFOSBPm_FFXA3HZbHFA&expires=1762702465&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 12:00:00 PM EST = Temple Owls @ Army Black Knights
-https://v1.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=Qsyv7IbXFJ_szcKWTMuRAA&expires=1762702475&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 01:00:00 PM EST = Citadel Bulldogs @ Ole Miss Rebels
-https://v12.thetvapp.to/hls/NCAAF02/tracks-v1a1/mono.m3u8?token=NDSgQKj4BajqlIZPYolI_g&expires=1762702486&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 01:00:00 PM EST = Ohio State Buckeyes @ Purdue Boilermakers
-https://e2.thetvapp.to/hls/BTN/tracks-v1a1/mono.m3u8?token=S1uSLqgGmwMyLdVIyUhkdA&expires=1762702496&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 01:00:00 PM EST = Missouri State Bears @ Liberty Flames
-https://v3.thetvapp.to/hls/NCAAF03/tracks-v1a1/mono.m3u8?token=wY7bLQZcbXwJysrJgsHpyg&expires=1762702506&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 01:00:00 PM EST = Bowling Green Falcons @ Eastern Michigan Eagles
-https://e4.thetvapp.to/hls/NCAAF01/tracks-v1a1/mono.m3u8?token=JIi8taIO7Bwsz9CgO_1Bjw&expires=1762702516&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 02:00:00 PM EST = UAB Blazers @ Rice Owls
-https://e3.thetvapp.to/hls/NCAAF04/tracks-v1a1/mono.m3u8?token=uXdUc5IV5adFYknPl1xI9w&expires=1762702527&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 02:30:00 PM EST = Maryland Terrapins @ Rutgers Scarlet Knights
-https://v15.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=K7lz9OAVbw9vDGIMqZpLFQ&expires=1762702537&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:00:00 PM EST = Louisiana Tech Bulldogs @ Delaware Blue Hens
-https://e1.thetvapp.to/hls/NCAAF06/tracks-v1a1/mono.m3u8?token=n-3RLf6idRwuvTl_nFvhEw&expires=1762702547&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:00:00 PM EST = Charlotte 49ers @ East Carolina Pirates
-https://v14.thetvapp.to/hls/NCAAF05/tracks-v1a1/mono.m3u8?token=26HV1MnT2rOxrp9bSBBdBA&expires=1762702557&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:00:00 PM EST = Tulsa Golden Hurricane @ Florida Atlantic Owls
-https://v13.thetvapp.to/hls/NCAAF07/tracks-v1a1/mono.m3u8?token=n0OdpYEJ_U5uj_qzmyiBPQ&expires=1762702568&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:00:00 PM EST = Florida International Panthers @ Middle Tennessee Blue Raiders
-https://e1.thetvapp.to/hls/NCAAF08/tracks-v1a1/mono.m3u8?token=ABTsUqgfAVc_WWWLIr6Fng&expires=1762702578&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:00:00 PM EST = Jacksonville State Gamecocks @ UTEP Miners
-https://v16.thetvapp.to/hls/NCAAF09/tracks-v1a1/mono.m3u8?token=apO2i8NjVkiV8aGwntbG-w&expires=1762702588&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Kansas Jayhawks @ Arizona Wildcats
-https://v3.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=dCrddj_SNiGw293JhdjYrQ&expires=1762702599&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Duke Blue Devils @ UConn Huskies
-https://e2.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=xDqP23I63Rtj7ouaas02Gg&expires=1762702609&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Oregon Ducks @ Iowa Hawkeyes
-https://v1.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=KBettUvXunVHkieMJl9MmA&expires=1762702619&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Iowa State Cyclones @ TCU Horned Frogs
-https://v18.thetvapp.to/hls/WNYWDT1/tracks-v1a1/mono.m3u8?token=ZEoGgxeUYURlsfwUvAqnMg&expires=1762702629&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Syracuse Orange @ Miami Hurricanes
-https://v12.thetvapp.to/hls/ACCNetwork/tracks-v1a1/mono.m3u8?token=N1MAswv1FxJpa0uh0onZ5w&expires=1762702640&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 03:30:00 PM EST = Texas A&M Aggies @ Missouri Tigers
-https://e5.thetvapp.to/hls/WABCDT1/tracks-v1a1/mono.m3u8?token=CTHujQplX_6RJ9nKnevQvw&expires=1762702650&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 04:00:00 PM EST = Georgia State Panthers @ Coastal Carolina Chanticleers
-https://v4.thetvapp.to/hls/NCAAF10/tracks-v1a1/mono.m3u8?token=gbWmUrhLB79V6tjmtP734Q&expires=1762702660&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 04:00:00 PM EST = Kennesaw State Owls @ New Mexico State Aggies
-https://v14.thetvapp.to/hls/NCAAF11/tracks-v1a1/mono.m3u8?token=yZB8f-MeosTEKr0wZR0Znw&expires=1762702671&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 04:01:00 PM EST = Auburn Tigers @ Vanderbilt Commodores
-https://v8.thetvapp.to/hls/SECN/tracks-v1a1/mono.m3u8?token=JdLxlJNgCk3DGooFnjESZg&expires=1762702681&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 04:30:00 PM EST = Washington Huskies @ Wisconsin Badgers
-https://v5.thetvapp.to/hls/BTN/tracks-v1a1/mono.m3u8?token=NuUkoAzrmRGdNud_R5Yrhw&expires=1762702691&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 04:30:00 PM EST = Stanford Cardinal @ North Carolina Tar Heels
-https://e4.thetvapp.to/hls/WPIX/tracks-v1a1/mono.m3u8?token=Fpb8EwH9cwKYn7jPC1GfHw&expires=1762702701&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 05:00:00 PM EST = Texas State Bobcats @ Louisiana Ragin Cajuns
-https://v15.thetvapp.to/hls/NCAAF12/tracks-v1a1/mono.m3u8?token=6Y6-YlTHI7BOU8Dcy1hTHA&expires=1762702712&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 06:00:00 PM EST = Air Force Falcons @ San Jose State Spartans
-https://v16.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=wfoqJ-dxQuRzEJ2SyBgZsQ&expires=1762702722&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:00:00 PM EST = California Golden Bears @ Louisville Cardinals
-https://e4.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=H7hWxC4u5R8IBIRMRJYlHQ&expires=1762702732&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:00:00 PM EST = Florida State Seminoles @ Clemson Tigers
-https://v4.thetvapp.to/hls/ACCNetwork/tracks-v1a1/mono.m3u8?token=cehR-THD7II2rLaTMN7gug&expires=1762702742&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:00:00 PM EST = Wake Forest Demon Deacons @ Virginia Cavaliers
-https://v13.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=jEk-Z4SxAV1gIAxU3B2bFA&expires=1762702753&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:30:00 PM EST = Florida Gators @ Kentucky Wildcats
-https://v8.thetvapp.to/hls/SECN/tracks-v1a1/mono.m3u8?token=Bgtj-3xU5xvJ1IbgwDlwEA&expires=1762702763&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:30:00 PM EST = LSU Tigers @ Alabama Crimson Tide
-https://v16.thetvapp.to/hls/ESPNU/tracks-v1a1/mono.m3u8?token=F2ADuJuNkP9O5S4LdIXGJA&expires=1762702773&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:30:00 PM EST = Navy Midshipmen @ Notre Dame Fighting Irish
-https://e2.thetvapp.to/hls/WNBCDT1/tracks-v1a1/mono.m3u8?token=nSZjFFzWYqizHuNVjZno9A&expires=1762702783&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 07:30:00 PM EST = Nevada Wolf Pack @ Utah State Aggies
-https://v2.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=lXFBHuKaGQk0yXYWMHhmOQ&expires=1762702794&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 09:00:00 PM EST = Nebraska Cornhuskers @ UCLA Bruins
-https://v12.thetvapp.to/hls/WNYWDT1/tracks-v1a1/mono.m3u8?token=1mN60HCMZix0CdPMMzAwgw&expires=1762702804&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 09:30:00 PM EST = UNLV Rebels @ Colorado State Rams
-https://e1.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=X2Gz5SGFQTrlNyxFIa7S2w&expires=1762702814&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NCAAF",11/08/25 10:00:00 PM EST = Sam Houston State Bearkats @ Oregon State Beavers
-https://e5.thetvapp.to/hls/WPIX/tracks-v1a1/mono.m3u8?token=5PrtPvKUiFkav0-BYx90_Q&expires=1762702825&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 12:40:00 PM EST = Pittsburgh Penguins @ New Jersey Devils
-https://v17.thetvapp.to/hls/NHL10/tracks-v1a1/mono.m3u8?token=PaZhyqQX45XXMgm9LcHxAA&expires=1762702835&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 01:10:00 PM EST = Ottawa Senators @ Philadelphia Flyers
+#EXTINF:-1 group-title="NFL",11/09/25 09:30:00 AM EST = Atlanta Falcons @ Indianapolis Colts
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/08/25 03:40:00 PM EST = Dallas Stars @ Nashville Predators
-https://v1.thetvapp.to/hls/NHL27/tracks-v1a1/mono.m3u8?token=Bxh1bxuQFrqQ2r-3AW8fXA&expires=1762702856&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = Boston Bruins @ Toronto Maple Leafs
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = New England Patriots @ Tampa Bay Buccaneers
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = Buffalo Sabres @ Carolina Hurricanes
-https://v4.thetvapp.to/hls/NHL17/tracks-v1a1/mono.m3u8?token=27yUmN33P8bdD_oTHnED5w&expires=1762702877&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = Utah Mammoth @ Montréal Canadiens
-https://e4.thetvapp.to/hls/NHL25/tracks-v1a1/mono.m3u8?token=lg5ChwLTP7ed2WCQetE5Qw&expires=1762702887&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = New York Islanders @ New York Rangers
-https://v1.thetvapp.to/hls/NHL09/tracks-v1a1/mono.m3u8?token=mEFCAzgxM5xzyhcP9sLgXg&expires=1762702897&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = Seattle Kraken @ St Louis Blues
-https://v5.thetvapp.to/hls/NHL16/tracks-v1a1/mono.m3u8?token=vDZEXj9QZM4LnM53pOWDFQ&expires=1762702907&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 07:10:00 PM EST = Washington Capitals @ Tampa Bay Lightning
-https://v14.thetvapp.to/hls/NHL30/tracks-v1a1/mono.m3u8?token=baeVy81lT8wSh2gtMk5cDQ&expires=1762702918&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 10:10:00 PM EST = Florida Panthers @ San Jose Sharks
-https://v15.thetvapp.to/hls/NHL07/tracks-v1a1/mono.m3u8?token=wlCc7vL9pLB1sePXfgwL2Q&expires=1762702928&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 10:10:00 PM EST = Anaheim Ducks @ Vegas Golden Knights
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = Jacksonville Jaguars @ Houston Texans
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/08/25 10:10:00 PM EST = Colorado Avalanche @ Edmonton Oilers
-https://v12.thetvapp.to/hls/NHL13/tracks-v1a1/mono.m3u8?token=PzLqBRkR0iH_W7Yy7NwK_A&expires=1762702949&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NHL",11/08/25 10:10:00 PM EST = Columbus Blue Jackets @ Vancouver Canucks
-https://v8.thetvapp.to/hls/NHL20/tracks-v1a1/mono.m3u8?token=ExeZhrck8Z6OyXRIhEr8uA&expires=1762702959&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="PPV",11/08/25 04:00:00 PM EST = UFC Fight Night
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = Cleveland Browns @ New York Jets
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/08/25 07:10:00 PM EST = Dallas Mavericks @ Washington Wizards
-https://v16.thetvapp.to/hls/NBA20/tracks-v1a1/mono.m3u8?token=_9gKjPaqrzQLNRFiAqbwrg&expires=1762702980&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 07:30:00 PM EST = Toronto Raptors @ Philadelphia 76ers
-https://e3.thetvapp.to/hls/NBA06/tracks-v1a1/mono.m3u8?token=Czc747-P31Ey3M2o3T2O3Q&expires=1762702990&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 08:00:00 PM EST = Los Angeles Lakers @ Atlanta Hawks
-https://v12.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8?token=LrrbmXKp74psjC3zb2IHMw&expires=1762703000&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 08:00:00 PM EST = New Orleans Pelicans @ San Antonio Spurs
-https://v4.thetvapp.to/hls/NBA27/tracks-v1a1/mono.m3u8?token=OEOxmHrh8KYr0FoKyIjdPg&expires=1762703010&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 08:10:00 PM EST = Chicago Bulls @ Cleveland Cavaliers
-https://v14.thetvapp.to/hls/NBA04/tracks-v1a1/mono.m3u8?token=IIkuQ3yhwxBPZBgMhWLamg&expires=1762703021&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 08:10:00 PM EST = Portland Trail Blazers @ Miami Heat
-https://v16.thetvapp.to/hls/NBA17/tracks-v1a1/mono.m3u8?token=wECMyk53Arj2YkuJnBoHmg&expires=1762703031&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 09:10:00 PM EST = Indiana Pacers @ Denver Nuggets
-https://v13.thetvapp.to/hls/NBA23/tracks-v1a1/mono.m3u8?token=0BVAao3cnkt6T4EkY6sy0g&expires=1762703041&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
-#EXTINF:-1 group-title="NBA",11/08/25 10:30:00 PM EST = Phoenix Suns @ Los Angeles Clippers
-https://v17.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=XNoZbV7kgnzhmldbANkCDw&expires=1762703052&user_id=VGxVbHVZYWhyS0hwRGo5aW1VbE5sSEgwVzBhazI0ZGg4Y2d5ejBFQw==
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = New York Giants @ Chicago Bears
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = New Orleans Saints @ Carolina Panthers
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = Buffalo Bills @ Miami Dolphins
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 01:00:00 PM EST = Baltimore Ravens @ Minnesota Vikings
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 04:05:00 PM EST = Arizona Cardinals @ Seattle Seahawks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 04:25:00 PM EST = Los Angeles Rams @ San Francisco 49ers
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 04:25:00 PM EST = Detroit Lions @ Washington Commanders
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",11/09/25 08:20:00 PM EST = Pittsburgh Steelers @ Los Angeles Chargers
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 01:10:00 PM EST = Chicago Blackhawks @ Detroit Red Wings
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 02:10:00 PM EST = Los Angeles Kings @ Pittsburgh Penguins
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 07:10:00 PM EST = Utah Mammoth @ Ottawa Senators
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 07:10:00 PM EST = Seattle Kraken @ Dallas Stars
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 07:10:00 PM EST = Carolina Hurricanes @ Toronto Maple Leafs
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 08:10:00 PM EST = Calgary Flames @ Minnesota Wild
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 10:10:00 PM EST = Colorado Avalanche @ Vancouver Canucks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/09/25 10:10:00 PM EST = Winnipeg Jets @ Anaheim Ducks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 03:30:00 PM EST = Houston Rockets @ Milwaukee Bucks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 06:00:00 PM EST = Brooklyn Nets @ New York Knicks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 06:10:00 PM EST = Oklahoma City Thunder @ Memphis Grizzlies
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 06:10:00 PM EST = Boston Celtics @ Orlando Magic
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 07:30:00 PM EST = Detroit Pistons @ Philadelphia 76ers
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 08:40:00 PM EST = Indiana Pacers @ Golden State Warriors
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NBA",11/09/25 09:10:00 PM EST = Minnesota Timberwolves @ Sacramento Kings
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
