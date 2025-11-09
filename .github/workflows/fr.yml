@@ -22,8 +22,22 @@ jobs:
         run: |
           curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/232-france.3hautenormandie/232-france.3hautenormandie.php" | grep -oP "source:\s*'\K[^']+(?=',)")
           if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" | sed 's|https://s2.callofliberty.fr/tv/proxy/HLS-AES/||g' > fr/videofr3.m3u8
-            echo "✅ FR3 généré"
+            echo "🔗 URL source: $curl_output"
+            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" -o fr/videofr3_temp.m3u8
+            
+            # Nettoyer le proxy HLS-AES - méthode corrigée
+            if [ -f "fr/videofr3_temp.m3u8" ]; then
+              # Remplacer le proxy par l'URL réelle
+              sed 's|https://s2.callofliberty.fr/tv/proxy/HLS-AES/||g' fr/videofr3_temp.m3u8 > fr/videofr3.m3u8
+              
+              # Vérifier le résultat
+              echo "🔍 Vérification du nettoyage:"
+              head -3 fr/videofr3.m3u8
+              rm -f fr/videofr3_temp.m3u8
+              echo "✅ FR3 généré et nettoyé"
+            else
+              echo "❌ Fichier temporaire non créé"
+            fi
           else
             echo "❌ Erreur: URL source non trouvée pour FR3"
           fi
