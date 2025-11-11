@@ -1,29 +1,35 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",11/10/25 07:00:00 PM EST = Washington Wizards @ Detroit Pistons
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 07:10:00 PM EST = Los Angeles Lakers @ Charlotte Hornets
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 07:10:00 PM EST = Portland Trail Blazers @ Orlando Magic
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 07:30:00 PM EST = Cleveland Cavaliers @ Miami Heat
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 08:10:00 PM EST = San Antonio Spurs @ Chicago Bulls
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 08:30:00 PM EST = Milwaukee Bucks @ Dallas Mavericks
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 09:00:00 PM EST = Minnesota Timberwolves @ Utah Jazz
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",11/10/25 09:10:00 PM EST = New Orleans Pelicans @ Phoenix Suns
-https://v14.thetvapp.to/hls/NBA27/tracks-v1a1/mono.m3u8?token=j9t3Odey6kWWUM6dFvApvw&expires=1762875689&user_id=YjRNM09xQlhJbERuTGtRT2Z6YW1ITlpVdTg5SlRLZGxkck5jN01udw==
-#EXTINF:-1 group-title="NBA",11/10/25 10:30:00 PM EST = Atlanta Hawks @ Los Angeles Clippers
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/10/25 07:00:00 PM EST = Nashville Predators @ New York Rangers
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/10/25 07:00:00 PM EST = New York Islanders @ New Jersey Devils
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/10/25 08:30:00 PM EST = Columbus Blue Jackets @ Edmonton Oilers
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",11/10/25 10:00:00 PM EST = Florida Panthers @ Vegas Golden Knights
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NFL",11/10/25 08:15:00 PM EST = Philadelphia Eagles @ Green Bay Packers
-https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",11/11/25 07:10:00 PM EST = Los Angeles Kings @ Montréal Canadiens
+https://v14.thetvapp.to/hls/NHL29/tracks-v1a1/mono.m3u8?token=HSNRgmlrUjNmCzD91PHIWQ&expires=1762893732&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 07:10:00 PM EST = Dallas Stars @ Ottawa Senators
+https://v5.thetvapp.to/hls/NHL27/tracks-v1a1/mono.m3u8?token=HrcD5w9Vk8LvCMwgfVI7-A&expires=1762893742&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 07:10:00 PM EST = Washington Capitals @ Carolina Hurricanes
+https://v4.thetvapp.to/hls/NHL30/tracks-v1a1/mono.m3u8?token=FOJ0_IPVKE0ngAXWImkpDQ&expires=1762893752&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 07:10:00 PM EST = Toronto Maple Leafs @ Boston Bruins
+https://v16.thetvapp.to/hls/TNTEast/tracks-v1a1/mono.m3u8?token=wDASuJanG5jhdZeKZJJ5lA&expires=1762893762&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 08:10:00 PM EST = Calgary Flames @ St Louis Blues
+https://v16.thetvapp.to/hls/NHL02/tracks-v1a1/mono.m3u8?token=ORlc70Dt7_tKPgVo8r6K7w&expires=1762893773&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 08:10:00 PM EST = San Jose Sharks @ Minnesota Wild
+https://v12.thetvapp.to/hls/NHL14/tracks-v1a1/mono.m3u8?token=PlvoZJvISuVwHaQXPcL8Uw&expires=1762893783&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 09:40:00 PM EST = Anaheim Ducks @ Colorado Avalanche
+https://e3.thetvapp.to/hls/TNTEast/tracks-v1a1/mono.m3u8?token=qfv9ZYdvKPCgHTowmH2iIw&expires=1762893793&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 10:10:00 PM EST = Columbus Blue Jackets @ Seattle Kraken
+https://v1.thetvapp.to/hls/NHL20/tracks-v1a1/mono.m3u8?token=IZviRlIrV4M6ZqJX446rAQ&expires=1762893804&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NHL",11/11/25 10:10:00 PM EST = Winnipeg Jets @ Vancouver Canucks
+https://v17.thetvapp.to/hls/NHL01/tracks-v1a1/mono.m3u8?token=ReU-SJkR2I9YSc-wpyRhAg&expires=1762893814&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 07:30:00 PM EST = Memphis Grizzlies @ New York Knicks
+https://v8.thetvapp.to/hls/NBA15/tracks-v1a1/mono.m3u8?token=ud2DnCfe9A9ytfvuI4zENw&expires=1762893824&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 07:30:00 PM EST = Toronto Raptors @ Brooklyn Nets
+https://e4.thetvapp.to/hls/NBA06/tracks-v1a1/mono.m3u8?token=5PAICEaFQJ26AVep8q-_9w&expires=1762893835&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 08:00:00 PM EST = Golden State Warriors @ Oklahoma City Thunder
+https://e2.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8?token=gTsFqrHpqBqn4LeZFQsblQ&expires=1762893845&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 08:00:00 PM EST = Boston Celtics @ Philadelphia 76ers
+https://e5.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8?token=-zyabBkqeGstNMl6VFXybg&expires=1762893855&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 09:00:00 PM EST = Indiana Pacers @ Utah Jazz
+https://v17.thetvapp.to/hls/NBA23/tracks-v1a1/mono.m3u8?token=RjwhDHpDaEuQP_NG37Av0Q&expires=1762893865&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NBA",11/11/25 11:00:00 PM EST = Denver Nuggets @ Sacramento Kings
+https://v16.thetvapp.to/hls/NBA26/tracks-v1a1/mono.m3u8?token=7qKDAZCgSbpAa55BVemZsw&expires=1762893875&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NCAAF",11/11/25 07:30:00 PM EST = Kent State Golden Flashes @ Akron Zips
+https://e5.thetvapp.to/hls/ESPNU/tracks-v1a1/mono.m3u8?token=qNo_4rj2OBHDXOS0IvEVEw&expires=1762893886&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
+#EXTINF:-1 group-title="NCAAF",11/11/25 08:00:00 PM EST = Ohio Bobcats @ Western Michigan Broncos
+https://e1.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=LXCP70O009HP7eNfHwQY5g&expires=1762893896&user_id=Yzd0Z0d5TU1RQmxOeW1WdFVwRXlzTmVINkhxcjhXSXlUNUYzYlpBNw==
