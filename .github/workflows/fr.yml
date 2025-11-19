@@ -2,7 +2,7 @@ name: Run Script Every 6 Hours FR
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Toutes les 3 heures
+    - cron: '0 */6 * * *'  # Toutes les 6 heures
   workflow_dispatch:        # Déclenchement manuel
 
 jobs:
