@@ -1,55 +1,19 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",12/07/25 12:10:00 PM EST = Orlando Magic @ New York Knicks
-https://v14.thetvapp.to/hls/NBA02/tracks-v1a1/mono.m3u8?token=byVEJuuUUJBwqPsNoRfouw&expires=1765208784&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NBA",12/07/25 03:40:00 PM EST = Boston Celtics @ Toronto Raptors
-https://v12.thetvapp.to/hls/NBA14/tracks-v1a1/mono.m3u8?token=fEVxpoH3NmiW2fQlu8eLiQ&expires=1765208794&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NBA",12/07/25 06:10:00 PM EST = Portland Trail Blazers @ Memphis Grizzlies
+#EXTINF:-1 group-title="NBA",12/08/25 07:10:00 PM EST = Sacramento Kings @ Indiana Pacers
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NBA",12/07/25 06:10:00 PM EST = Denver Nuggets @ Charlotte Hornets
-https://v15.thetvapp.to/hls/NBA26/tracks-v1a1/mono.m3u8?token=rc6K4U9fTttwppI-9JWbGg&expires=1765208815&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NBA",12/07/25 07:10:00 PM EST = Golden State Warriors @ Chicago Bulls
-https://e5.thetvapp.to/hls/NBA11/tracks-v1a1/mono.m3u8?token=XP8NiYqclyVMUpN_CHqyDA&expires=1765208825&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NBA",12/07/25 07:40:00 PM EST = Los Angeles Lakers @ Philadelphia 76ers
-https://e1.thetvapp.to/hls/NBA12/tracks-v1a1/mono.m3u8?token=96ViegAvOk66JdEe0q2joQ&expires=1765208835&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NBA",12/07/25 08:10:00 PM EST = Oklahoma City Thunder @ Utah Jazz
-https://v5.thetvapp.to/hls/NBA05/tracks-v1a1/mono.m3u8?token=bagyYd4lUBw0mIeIbadpKg&expires=1765208846&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Indianapolis Colts @ Jacksonville Jaguars
-https://v17.thetvapp.to/hls/NFL06/tracks-v1a1/mono.m3u8?token=HQ03b_RSPNL0tpdFMKtQsQ&expires=1765208856&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Tennessee Titans @ Cleveland Browns
-https://v14.thetvapp.to/hls/NFL22/tracks-v1a1/mono.m3u8?token=YZ26LWf5lgbDnRRqGBkvew&expires=1765208866&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Cincinnati Bengals @ Buffalo Bills
-https://e3.thetvapp.to/hls/NFL21/tracks-v1a1/mono.m3u8?token=PpG27xFHzM_W2Oi34mVF5A&expires=1765208877&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Pittsburgh Steelers @ Baltimore Ravens
-https://e1.thetvapp.to/hls/NFL02/tracks-v1a1/mono.m3u8?token=RyA-hGAHzPbxlm_VzCNQ3Q&expires=1765208887&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Seattle Seahawks @ Atlanta Falcons
-https://v3.thetvapp.to/hls/NFL07/tracks-v1a1/mono.m3u8?token=F7IOy34D6K-QxB4K_9th8g&expires=1765208897&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Miami Dolphins @ New York Jets
-https://v14.thetvapp.to/hls/NFL23/tracks-v1a1/mono.m3u8?token=f9IM2mDxZWjdPPYyaFL-eQ&expires=1765208907&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = Washington Commanders @ Minnesota Vikings
-https://v5.thetvapp.to/hls/NFL24/tracks-v1a1/mono.m3u8?token=qnDGVsb1vmXdBFT_0IeHgQ&expires=1765208918&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 01:00:00 PM EST = New Orleans Saints @ Tampa Bay Buccaneers
-https://e1.thetvapp.to/hls/NFL17/tracks-v1a1/mono.m3u8?token=8mI3eEPvKxPwAylcbBzd2g&expires=1765208928&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 04:05:00 PM EST = Denver Broncos @ Las Vegas Raiders
-https://v15.thetvapp.to/hls/NFL20/tracks-v1a1/mono.m3u8?token=AqpI6XfwZsbziAsbDiTsWQ&expires=1765208938&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 04:25:00 PM EST = Los Angeles Rams @ Arizona Cardinals
-https://v18.thetvapp.to/hls/NFL14/tracks-v1a1/mono.m3u8?token=m2wdJGYTcQZaxUaZDYg8Hg&expires=1765208948&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 04:25:00 PM EST = Chicago Bears @ Green Bay Packers
-https://v16.thetvapp.to/hls/NFL25/tracks-v1a1/mono.m3u8?token=0ugbn1vE-KKvMyp85mo3fw&expires=1765208959&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NFL",12/07/25 08:20:00 PM EST = Houston Texans @ Kansas City Chiefs
-https://v8.thetvapp.to/hls/NFL16/tracks-v1a1/mono.m3u8?token=8WP7CjQF3O_JRwyT7biEMg&expires=1765208969&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 01:10:00 PM EST = Colorado Avalanche @ Philadelphia Flyers
+#EXTINF:-1 group-title="NBA",12/08/25 07:40:00 PM EST = Phoenix Suns @ Minnesota Timberwolves
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",12/07/25 05:10:00 PM EST = New York Islanders @ Florida Panthers
-https://v13.thetvapp.to/hls/NHL09/tracks-v1a1/mono.m3u8?token=EdYkiznSYaR9gDV-4Wafhw&expires=1765208990&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 05:10:00 PM EST = San Jose Sharks @ Carolina Hurricanes
-https://v4.thetvapp.to/hls/NHL14/tracks-v1a1/mono.m3u8?token=UWuvHA4Qvd3Z1nknIqM_bw&expires=1765209000&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 06:10:00 PM EST = Pittsburgh Penguins @ Dallas Stars
+#EXTINF:-1 group-title="NBA",12/08/25 08:10:00 PM EST = San Antonio Spurs @ New Orleans Pelicans
 https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
-#EXTINF:-1 group-title="NHL",12/07/25 07:10:00 PM EST = Vegas Golden Knights @ New York Rangers
-https://e4.thetvapp.to/hls/NHLNetwork/tracks-v1a1/mono.m3u8?token=_uhhsBcC6lFFTthJhIyKzQ&expires=1765209021&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 07:10:00 PM EST = St Louis Blues @ Montréal Canadiens
-https://v12.thetvapp.to/hls/NHL22/tracks-v1a1/mono.m3u8?token=Fe-vPeUdAzEuP7UMlTFcmA&expires=1765209031&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 07:10:00 PM EST = Columbus Blue Jackets @ Washington Capitals
-https://e1.thetvapp.to/hls/NHL20/tracks-v1a1/mono.m3u8?token=dBluYQXx_AnVUKLOohPY2A&expires=1765209041&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
-#EXTINF:-1 group-title="NHL",12/07/25 08:10:00 PM EST = Chicago Blackhawks @ Anaheim Ducks
-https://v14.thetvapp.to/hls/NHL05/tracks-v1a1/mono.m3u8?token=au98JEcLaPeEd4kLuYMRew&expires=1765209051&user_id=VDFzZ0w2Vmd6cW10VmhvbXFEZ0xSOW9YbEpFbXg5RkR4NUduZG5GRA==
+#EXTINF:-1 group-title="NHL",12/08/25 07:30:00 PM EST = Tampa Bay Lightning @ Toronto Maple Leafs
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",12/08/25 09:00:00 PM EST = Buffalo Sabres @ Calgary Flames
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",12/08/25 09:00:00 PM EST = Los Angeles Kings @ Utah Mammoth
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",12/08/25 10:00:00 PM EST = Detroit Red Wings @ Vancouver Canucks
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NHL",12/08/25 10:00:00 PM EST = Minnesota Wild @ Seattle Kraken
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
+#EXTINF:-1 group-title="NFL",12/08/25 08:15:00 PM EST = Philadelphia Eagles @ Los Angeles Chargers
+https://github.com/mikekaprielian/rtnaodhor93n398/raw/main/en/offline.mp4
