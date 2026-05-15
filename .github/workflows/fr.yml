@@ -2,8 +2,8 @@ name: Run Script Every 6 Hours FR
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Toutes les 6 heures
-  workflow_dispatch:        # Déclenchement manuel
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,10 +11,8 @@ permissions:
 jobs:
   run_script:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
@@ -22,221 +20,88 @@ jobs:
       - name: Create Required Folders
         run: mkdir -p fr txt ar py
 
-      - name: Run Script and Generate M3U8 for VideoLEQUIPE
+      - name: Fetch and Save M3U8 Streams
         run: |
           set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/21-LEQUIPE/21-LEQUIPE.php")
-          echo "=== Début page LEQUIPE ==="
-          echo "$page" | head -c 500
-          echo -e "\n=== Fin debug ==="
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            echo "URL trouvée : $curl_output"
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videolequipe.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour LEQUIPE"
-            echo "$page"
-            exit 1
-          fi
 
-      - name: Run Script and Generate M3U8 for VideoFR3
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/232-france.3hautenormandie/232-france.3hautenormandie.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            echo "URL source: $curl_output"
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" -o fr/videofr3_temp.m3u8
-            if [ -f "fr/videofr3_temp.m3u8" ]; then
-              sed 's|https://s2.callofliberty.fr/tv/proxy/HLS-AES/||g' fr/videofr3_temp.m3u8 > fr/videofr3.m3u8
-              if [ ! -s fr/videofr3.m3u8 ]; then
-                echo "Erreur: Le fichier nettoyé est vide"
+          # Common curl options
+          curl_opts=(-k -s -L --compressed)
+          common_headers=(
+            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"
+            -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+            -H "Accept-Language: fr,fr-FR;q=0.8,en;q=0.5"
+            -H "Sec-Fetch-Dest: document"
+            -H "Sec-Fetch-Mode: navigate"
+            -H "Sec-Fetch-Site: none"
+            -H "Upgrade-Insecure-Requests: 1"
+            -H "Connection: keep-alive"
+          )
+
+          # Function to extract source URL
+          extract_source() {
+            local url="$1"
+            local page
+            page=$(curl "${curl_opts[@]}" "${common_headers[@]}" "$url")
+            echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1
+          }
+
+          # Function to download m3u8
+          download_m3u8() {
+            local page_url="$1"
+            local output_file="$2"
+            local source_url
+            source_url=$(extract_source "$page_url")
+            if [ -z "$source_url" ]; then
+              echo "❌ URL source non trouvée pour $page_url" >&2
+              return 1
+            fi
+            echo "✅ URL trouvée pour $output_file : $source_url"
+            curl "${curl_opts[@]}" -e "https://callofliberty.fr/" -H "Origin: https://callofliberty.fr" "${common_headers[@]}" "$source_url" -o "$output_file"
+          }
+
+          # Liste des chaînes (URL de la page PHP, fichier de sortie)
+          channels=(
+            "https://callofliberty.fr/tv/21-LEQUIPE/21-LEQUIPE.php|fr/videolequipe.m3u8"
+            "https://callofliberty.fr/tv/232-france.3hautenormandie/232-france.3hautenormandie.php|fr/videofr3_temp.m3u8"
+            "https://callofliberty.fr/tv/301-RTS1/301-RTS1.php|fr/videorts1.m3u8"
+            "https://callofliberty.fr/tv/328-AB3/328-AB3.php|fr/videoab3.m3u8"
+            "https://callofliberty.fr/tv/1-TF1/1-TF1.php|fr/videotf1.m3u8"
+            "https://callofliberty.fr/tv/20-TF1SERIESFILMS/20-TF1SERIESFILMS.php|fr/videotf1fs.m3u8"
+            "https://callofliberty.fr/tv/10-TMC/10-TMC.php|fr/videotmc.m3u8"
+            "https://callofliberty.fr/tv/11-TFX/11-TFX.php|fr/videotfx.m3u8"
+            "https://callofliberty.fr/tv/76-CANALPLUS/76-CANALPLUS.php|fr/videocp.m3u8"
+            "https://callofliberty.fr/tv/9-W9/9-W9.php|fr/videow9.m3u8"
+            "https://callofliberty.fr/tv/22-6ter/22-6ter.php|fr/video6ter.m3u8"
+            "https://callofliberty.fr/tv/2-france.2/2-france.2.php|fr/videof2.m3u8"
+            "https://callofliberty.fr/tv/3-france.3/3-france.3.php|fr/videof3.m3u8"
+            "https://callofliberty.fr/tv/4-france.4/4-france.4.php|fr/videof4.m3u8"
+            "https://callofliberty.fr/tv/5-france.5/5-france.5.php|fr/videof5.m3u8"
+            "https://callofliberty.fr/tv/6-M6/6-M6.php|fr/videom6.m3u8"
+          )
+
+          # Télécharger chaque chaîne
+          for entry in "${channels[@]}"; do
+            IFS='|' read -r page_url output_file <<< "$entry"
+            echo "Traitement de $page_url -> $output_file"
+            if [[ "$output_file" == *"videofr3_temp.m3u8" ]]; then
+              # Cas spécial FR3 avec nettoyage
+              if download_m3u8 "$page_url" "$output_file"; then
+                sed 's|https://s2.callofliberty.fr/tv/proxy/HLS-AES/||g' "$output_file" > fr/videofr3.m3u8
+                if [ ! -s fr/videofr3.m3u8 ]; then
+                  echo "Erreur: fichier nettoyé vide"
+                  exit 1
+                fi
+                rm -f "$output_file"
+                echo "FR3 nettoyé avec succès"
+              else
                 exit 1
               fi
-              echo "Vérification du nettoyage:"
-              head -3 fr/videofr3.m3u8
-              rm -f fr/videofr3_temp.m3u8
-              echo "FR3 généré et nettoyé"
             else
-              echo "Fichier temporaire non créé"
-              exit 1
+              download_m3u8 "$page_url" "$output_file" || exit 1
             fi
-          else
-            echo "Erreur: URL source non trouvée pour FR3"
-            exit 1
-          fi
+          done
 
-      - name: Run Script and Generate M3U8 for VideoRTS1
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/301-RTS1/301-RTS1.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videorts1.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour RTS1"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoAB3
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/328-AB3/328-AB3.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videoab3.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour AB3"
-            exit 1
-          fi
-          
-      - name: Run Script and Generate M3U8 for VideoTF1
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/1-TF1/1-TF1.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videotf1.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour TF1"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoTF1FS
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/20-TF1SERIESFILMS/20-TF1SERIESFILMS.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videotf1fs.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour TF1SERIESFILMS"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoTMC
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/10-TMC/10-TMC.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videotmc.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour TMC"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoTFX
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/11-TFX/11-TFX.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videotfx.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour TFX"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoCP
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/76-CANALPLUS/76-CANALPLUS.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videocp.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour CANALPLUS"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for VideoW9
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/9-W9/9-W9.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videow9.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour W9"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for Video6ter
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/22-6ter/22-6ter.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/video6ter.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour 6ter"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for F2
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/2-france.2/2-france.2.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videof2.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour France 2"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for F3
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/3-france.3/3-france.3.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videof3.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour France 3"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for F4
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/4-france.4/4-france.4.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videof4.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour France 4"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for F5
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/5-france.5/5-france.5.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videof5.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour France 5"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U8 for M6
-        run: |
-          set -euo pipefail
-          page=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/6-M6/6-M6.php")
-          curl_output=$(echo "$page" | grep -oP "source:\s*['\"]\K[^'\"]+" | head -1)
-          if [ -n "$curl_output" ]; then
-            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videom6.m3u8
-          else
-            echo "Erreur: URL source non trouvée pour M6"
-            exit 1
-          fi
-
-      - name: Run Script and Generate M3U for CNN Turk
-        run: |
-          set -euo pipefail
+          # Cas spécial CNN Turk
           if [ -f "py/videocnnturk.py" ]; then
             python3 py/videocnnturk.py > ar/videocnnturk_url.txt
             {
