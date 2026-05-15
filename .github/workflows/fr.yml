@@ -21,6 +21,15 @@ jobs:
       - name: Create Required Folders
         run: mkdir -p fr txt ar py
 
+      - name: Run Script and Generate M3U8 for VideoLEQUIPE
+        run: |
+          curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/21-LEQUIPE/21-LEQUIPE.php" | tr -d '\n' | grep -oP "source:\s*'\K[^']+")
+          if [ -n "$curl_output" ]; then
+            curl -k -e "https://callofliberty.fr/" -A "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" -H "Origin: https://callofliberty.fr" "$curl_output" > fr/videolequipe.m3u8
+          else
+            echo "Erreur: URL source non trouvée pour LEQUIPE"
+          fi
+
       - name: Run Script and Generate M3U8 for VideoBFMN
         run: |
           curl_output=$(curl -k -s -H "User-Agent: Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.103 Mobile Safari/537.36" "https://callofliberty.fr/tv/269-BFMNORMANDIE/269-BFMNORMANDIE.php" | tr -d '\n' | grep -oP "source:\s*'\K[^']+")
