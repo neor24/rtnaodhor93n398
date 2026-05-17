@@ -2,5 +2,5 @@
 #EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="fre a1",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="fre",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a1/mono.ts.m3u8"
 #EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="qad a2",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="qad",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a2/mono.ts.m3u8"
 #EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="qaa a3",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="qaa",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a3/mono.ts.m3u8"
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=3160000,BANDWIDTH=3910000,AUDIO="aac",RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d4028,mp4a.40.2",CLOSED-CAPTIONS=NONE
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=3160000,BANDWIDTH=3920000,AUDIO="aac",RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d4028,mp4a.40.2",CLOSED-CAPTIONS=NONE
 https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-v1a1/mono.ts.m3u8
