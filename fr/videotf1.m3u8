@@ -4,16 +4,16 @@
 
 # variants
 #EXT-X-STREAM-INF:BANDWIDTH=3193080,AVERAGE-BANDWIDTH=2891350,RESOLUTION=1280x720,FRAME-RATE=25,CODECS="avc1.4D401F,mp4a.40.2",SUBTITLES="subtitles",AUDIO="audio_0"
-index_1.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp
+index_1.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp
 #EXT-X-STREAM-INF:BANDWIDTH=2207480,AVERAGE-BANDWIDTH=2011350,RESOLUTION=1024x576,FRAME-RATE=25,CODECS="avc1.4D401F,mp4a.40.2",SUBTITLES="subtitles",AUDIO="audio_0"
-index_2.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp
+index_2.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp
 #EXT-X-STREAM-INF:BANDWIDTH=1591506,AVERAGE-BANDWIDTH=1461385,RESOLUTION=1024x576,FRAME-RATE=25,CODECS="avc1.4D401F,mp4a.40.2",SUBTITLES="subtitles",AUDIO="audio_0"
-index_3.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp
+index_3.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp
 
 # media
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="fra",LANGUAGE="fra",DEFAULT=YES,AUTOSELECT=YES,URI="index_12_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="mul",LANGUAGE="mul",DEFAULT=NO,AUTOSELECT=NO,URI="index_13_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="sme",LANGUAGE="sme",DEFAULT=NO,AUTOSELECT=NO,URI="index_14_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="no subtitles",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE="mul",URI="index_9_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Sourds et malentendant",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="sme",URI="index_10_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
-#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="français",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="fra",URI="index_11_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10a0f161b194-89522705-6ad3-436d-ae85-4300fe7b58a6&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="fra",LANGUAGE="fra",DEFAULT=YES,AUTOSELECT=YES,URI="index_12_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="mul",LANGUAGE="mul",DEFAULT=NO,AUTOSELECT=NO,URI="index_13_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio_0",CHANNELS="2",NAME="sme",LANGUAGE="sme",DEFAULT=NO,AUTOSELECT=NO,URI="index_14_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="no subtitles",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE="mul",URI="index_9_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="Sourds et malentendant",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="sme",URI="index_10_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subtitles",NAME="français",DEFAULT=NO,AUTOSELECT=NO,FORCED=NO,LANGUAGE="fra",URI="index_11_0.m3u8?bpkio_serviceid=9023effe3c16b0475d35e9f31c778b5c&bpkio_sessionid=10b0b161a194-f8a88a04-d245-424b-b922-02b7546d9b45&category=all&mm_sp"
