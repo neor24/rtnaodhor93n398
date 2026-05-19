@@ -1,6 +1,14 @@
 #EXTM3U
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="fre a1",DEFAULT=YES,AUTOSELECT=YES,LANGUAGE="fre",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a1/mono.ts.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="qad a2",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="qad",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a2/mono.ts.m3u8"
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",NAME="qaa a3",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="qaa",URI="https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-a3/mono.ts.m3u8"
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=3160000,BANDWIDTH=3910000,AUDIO="aac",RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d4028,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://poland.assistancefrancaise.com/hls/transcoder03/14/tracks-v1a1/mono.ts.m3u8
+#EXT-X-VERSION:5
+#EXT-X-STREAM-INF:BANDWIDTH=255244,AVERAGE-BANDWIDTH=232039,CODECS="avc1.42801e,mp4a.40.2",RESOLUTION=256x144,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_118000=9.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=584055,AVERAGE-BANDWIDTH=530959,CODECS="avc1.42801e,mp4a.40.2",RESOLUTION=384x216,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_400000=8.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1225356,AVERAGE-BANDWIDTH=1113959,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_950000=7.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1750055,AVERAGE-BANDWIDTH=1590959,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=960x540,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_1400000=6.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3032655,AVERAGE-BANDWIDTH=2756959,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_2500000=5.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=5947655,AVERAGE-BANDWIDTH=5406959,CODECS="avc1.640029,mp4a.40.2",RESOLUTION=1920x1080,FRAME-RATE=25.000
+https://s2.callofliberty.fr/tv/proxy/HLS-AES/https://simulcast-frmedias-p.ftven.fr/ZXhwPTE3NzkxNzc5MTF+YWNsPSUyZip+aG1hYz1iMTU4ZmZkYzEwOWI0ZGNkMDI0ZjIwNzhiYmQ0OGNmZmQyYjIzMjU4NmFlNDgwYzc4YTFiOGQ0MDgzNjdiMTEz/simulcast/France_4/hls_fr4/France_4-mp4a_96000_fra=1-avc1_5000000=4.m3u8
